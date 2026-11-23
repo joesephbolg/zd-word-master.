@@ -1,0 +1,11 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="100" fill="#080e1b"/>
+  <rect x="38" y="38" width="436" height="436" rx="76" fill="none" stroke="#d6ad45" stroke-width="12"/>
+  <g fill="#d6ad45" font-family="Arial,sans-serif" font-weight="bold" text-anchor="middle">
+    <text x="256" y="205" font-size="100">ZD</text>
+    <text x="256" y="300" font-size="55">WORD</text>
+    <text x="256" y="365" font-size="55">MASTER</text>
+  </g>
+  <path d="M125 405H387" stroke="#d6ad45" stroke-width="8" stroke-linecap="round"/>
+</svg>
