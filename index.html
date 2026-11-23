@@ -5,6 +5,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080e1b">
+  <link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ZD Word Master">
 <meta name="description" content="ZD Word Master - The ultimate word search experience.">
 <title>ZD Word Master</title>
 
@@ -1426,6 +1431,13 @@ function playSound(type){
 
 loadData();
 startLevel(level);
+  if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js").catch(error => {
+      console.error("Offline setup failed:", error);
+    });
+  });
+  }
 
 </script>
 
